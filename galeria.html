@@ -1,0 +1,145 @@
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+  />
+
+  <title>Galeria | The Last Bite</title>
+</head>
+
+<body>
+  <header>
+    <nav aria-label="Navegação principal">
+      <button
+        id="menubtn"
+        type="button"
+        aria-label="Abrir ou fechar menu"
+        aria-controls="menu"
+        aria-expanded="false"
+      >
+        <i class="bi bi-list" aria-hidden="true"></i>
+      </button>
+
+      <ul id="menu">
+        <li><a href="home.html"><i class="bi bi-house"></i><span>Home</span></a></li>
+        <li><a href="cardapio.html"><i class="bi bi-fork-knife"></i><span>Cardápio</span></a></li>
+        <li><a href="sobre.html"><i class="bi bi-info-circle"></i><span>Sobre nós</span></a></li>
+        <li><a href="galeria.html" aria-current="page"><i class="bi bi-images"></i><span>Galeria</span></a></li>
+        <li><a href="contato.html"><i class="bi bi-telephone"></i><span>Contato</span></a></li>
+        <li><a href="login.html"><i class="bi bi-person-circle"></i><span>Entrar</span></a></li>
+        <li><img id="menulogo" src="img/logo.png" alt="Logo The Last Bite" /></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="galeria-pagina">
+    <section class="galeria-container">
+      <div class="galeria-cabecalho">
+        <p class="galeria-eyebrow">UM LUGAR FORA DO COMUM</p>
+        <h1>Galeria</h1>
+        <p>
+          Explore os sabores, o ambiente e os detalhes
+          que fazem parte da experiência The Last Bite.
+        </p>
+      </div>
+
+      <div class="galeria-cards">
+
+        <figure class="imagem-card">
+          <img src="img/ambiente.png" alt="Mesa à luz de velas no restaurante" loading="lazy" />
+          <figcaption>
+            <span>01</span>
+            <h2>Uma experiência diferente</h2>
+            <p>Entre luzes, sombras e histórias.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="imagem-card">
+          <img src="img/bebida.png" alt="Drink vermelho servido com gelo" loading="lazy" />
+          <figcaption>
+            <span>02</span>
+            <h2>Drinks da casa</h2>
+            <p>Um brinde ao inesperado.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="imagem-card">
+          <img src="img/combo.png" alt="Combo especial de hambúrguer, batata e bebida" loading="lazy" />
+          <figcaption>
+            <span>03</span>
+            <h2>Combo da semana</h2>
+            <p>Uma combinação de respeito.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="imagem-card">
+          <img src="img/faca.png" alt="Hambúrguer temático com decoração de faca" loading="lazy" />
+          <figcaption>
+            <span>04</span>
+            <h2>Sabores que assombram</h2>
+            <p>O terror fica na temática. O sabor, na memória.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="imagem-card">
+          <img src="img/fachada.png" alt="Fachada iluminada do The Last Bite" loading="lazy" />
+          <figcaption>
+            <span>05</span>
+            <h2>Nosso espaço</h2>
+            <p>Uma entrada para outra experiência.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="imagem-card">
+          <img src="img/hamb.png" alt="Hambúrguer artesanal acompanhado de batatas" loading="lazy" />
+          <figcaption>
+            <span>06</span>
+            <h2>Hambúrgueres artesanais</h2>
+            <p>Feitos para deixar saudade.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="imagem-card">
+          <img src="img/salao.png" alt="Salão do restaurante com iluminação vermelha" loading="lazy" />
+          <figcaption>
+            <span>07</span>
+            <h2>Nosso salão</h2>
+            <p>Onde a noite acontece.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="imagem-card">
+          <img src="img/sobremesa.png" alt="Sobremesa de chocolate com sorvete" loading="lazy" />
+          <figcaption>
+            <span>08</span>
+            <h2>Doces tentações</h2>
+            <p>O final perfeito para a noite.</p>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="galeria-footer">
+    <img src="img/logo.png" alt="The Last Bite" />
+    <p>Uma última mordida nunca é suficiente.</p>
+    <span>© 2026 The Last Bite · Guarulhos</span>
+  </footer>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+    <button id="fechar-lightbox" type="button" aria-label="Fechar imagem">&times;</button>
+    <img id="imagem-ampliada" src="" alt="" />
+  </div>
+
+  <script src="pages.js"></script>
+  <script src="galeria.js"></script>
+</body>
+</html>
